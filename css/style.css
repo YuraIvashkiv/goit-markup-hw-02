@@ -1,0 +1,17 @@
+/* main-colo-text - : rgba(33, 33, 33, 1); */
+/* secondary-color-test- : rgba(117, 117, 117, 1); */
+/* --accent-color (background): #F5F5F5 */
+/* --mail-white-color: background: #F5F5F5 */
+
+.list {
+ list-style: none;
+}
+body {
+background-color: var(--mail-white-color);
+}
+.logo {
+    color: rgba(0, 0, 0, 1);
+}
+.span-logo {
+    color:rgba(33, 150, 243, 1);
+}
