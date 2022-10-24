@@ -1,17 +1,69 @@
-/* main-colo-text - : rgba(33, 33, 33, 1); */
-/* secondary-color-test- : rgba(117, 117, 117, 1); */
-/* --accent-color (background): #F5F5F5 */
-/* --mail-white-color: background: #F5F5F5 */
+/* Колір основного тексту : rgba(33, 33, 33, 1); */
+/*  Вторинний колір : #757575; */
+/* Первинний колір лого: #000000 */
+/* Вторинний колір лого: #2196F3 */
+/* Акцент: #2196F3 */
+/* Білий колір (футер) первинний: #FFFFFF  */
+/* Білий колір (футер) вторинний: rgba(255, 255, 255, 0.6) */
+/*Вторинний колір фону:  #2F303A */
+/* Первинний колір фону: #F5F5F5 */
 
-.list {
- list-style: none;
+
+:root {
+    --first-background: #F5F5F5;
+    --accent-color: #F5F5F5;
+    --first-logo-color: #000000;
+    --second-logo-color: #2196F3;
+    --main-color-text: #212121;
+    --second-color-text: #757575;
+
 }
-body {
-background-color: var(--mail-white-color);
+
+
+body{
+    background-color:var(--first-background);
+    color: var(--main-color-text);
+    font-family: Roboto,  sans-serif;
+
+   }
+/* Синій колір для логотипу */
+   .span {
+    color: rgba(33, 150, 243, 1);
+   }
+  /* Зняття маркерів */
+  .list {
+      list-style: none;
+              
+  }
+  /* Чорний колір для логотипу і зняття підкреслення */
+.link {
+   text-decoration: none;
+   color:#000000;
+   font-family: Raleway, Oleo Script, sans-serif;
+    Size: 26px;
+ Line-height: 1.39;
+ 
 }
-.logo {
-    color: rgba(0, 0, 0, 1);
+.current {
+    color:#2196F3;
+    text-decoration: none;
 }
-.span-logo {
-    color:rgba(33, 150, 243, 1);
+
+/* Сірий колір для телефону */
+.link-item {
+    color: rgba(117, 117, 117, 1);
+    text-decoration: none;
 }
+.list-link{
+text-decoration: none;
+color: rgba(33, 33, 33, 1);
+}
+
+
+
+
+
+
+
+
+
