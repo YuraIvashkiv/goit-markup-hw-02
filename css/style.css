@@ -24,12 +24,12 @@
 
 
 
-body{
-    background-color:var(--first-background);
-    color: var(--main-color-text);
-    font-family: Roboto,  sans-serif;
-    letter-spacing: 0.03em;
-    
+body {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+       color: var(--main-color-text);
+  background-color: var(--first-background);
+      
    }
 
 
@@ -37,30 +37,33 @@ body{
 /* Синій колір для логотипу */
    .span {
     color: var(--accent-color);
+       }
+/* Стилізація чорного кольору для логотипу */
+.logo-link {
+    text-decoration: none;
+    color: var(--first-logo-color);
     font-family: Raleway, sans-serif;
     font-weight: 700;
-   font-size: 26px;
- line-height: 1.19;
-   }
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+}
+
+
 
   /* Зняття маркерів */
   .list {
       list-style: none;          
-  }
-    
-/* Стилізація чорного кольору для логотипу */
-.link {
-   text-decoration: none;
-   color:rgba(0, 0, 0, 1);
-   font-family: Raleway, sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
-    }
+  } 
 
-    /*  Стилізація студіо*/
-.link-studio {
+  /* зняття підкреслення */
+  .underline {
     text-decoration: none;
+  }
+
+  /*  Стилізація студіо*/
+.studio {
+  text-decoration: none;
     color:var(--main-color-text);
         font-weight: 500;
         font-size: 14px;
@@ -79,7 +82,7 @@ body{
     
 }
 /* Стилізація контактів */
-.link-contacts {
+.contacts {
         text-decoration: none;
         color: var(--main-color-text);
         font-weight: 500;
@@ -99,7 +102,7 @@ body{
 }
 
 /* Сірий колір для телефону */
-.link-tel {
+.tel {
       text-decoration: none;
 color: var(--second-color-text);
     font-weight: 500;
@@ -126,16 +129,9 @@ font-family: inherit;
     color: var(--white-color-text);
     }
 
-/* Стилізація для тексту під зображенням  */
-/* .list-link{
-text-decoration: none;
-color: rgba(33, 33, 33, 1);
-} */
-
 /* Стилізація заголовка */
-.header {
-  text-decoration: none;
-    color: var(--main-color-text);
+.header-img {
+     color: var(--main-color-text);
         font-weight: 700;
         font-size: 18px;
         line-height: 2;
@@ -143,21 +139,39 @@ color: rgba(33, 33, 33, 1);
        }
 
 /* Стилізація опису */
-.text {  
-      color: var(--second-color-tex);    
+.text-img {  
+      color: var(--second-color-text);  
         font-size: 16px;
         font-weight: 400;
-        line-height: 1.87;  
+        line-height: 1.87; 
+        letter-spacing: 0.03em;
         
 }
-/* Футер */
-.footer {
-text-decoration: none;
-          color: var(--main-color-text); 
-              font-size: 14px;
-        line-height: 1.71;  
-        letter-spacing: 0.03em;
-     }
+/* стилізація футера */
+.footer-text {
+font-weight: 400;
+font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+   color: var(--main-color-text);
+            }
+   .footer-mail {
+    font-weight: 400;
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      color: var(--main-color-text);
+   }
+   .footer-tel {
+    font-weight: 400;
+      font-size: 14px;
+      line-height: 1.71;
+      letter-spacing: 0.03em;
+      color: var(--main-color-text);
+   }
+
+      
+    
 
 
 
