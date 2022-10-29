@@ -32,7 +32,7 @@ body {
   font-style: normal;
   color: var(--main-color-text);
   background-color: var(--first-background);
-
+  font-weight: 400;
 }
 
 
@@ -52,8 +52,6 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
-
-
 
 /* Зняття маркерів */
 .list {
@@ -146,6 +144,7 @@ color: var(--accent-color);
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+  cursor: pointer;
 }
 
 /* Кнопка "усі" при ховері, фокусі */
@@ -174,7 +173,6 @@ color: var(--accent-color);
 .text-img {
   color: var(--second-color-text);
   font-size: 16px;
-  font-weight: 400;
   line-height: 1.87;
   letter-spacing: 0.03em;
 
@@ -182,8 +180,7 @@ color: var(--accent-color);
 
 /* стилізація футера */
 .footer {
-  font-style: normal;
-  font-weight: 400;
+  
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
