@@ -1,3 +1,98 @@
+/* СТИЛІЗАЦІЯ СТУДІЇ- HTML */
+
+/* Стилізація студії-як поточної сторінки */
+.current-studio {
+  text-decoration: none;
+  color: var(--accent-color);
+}
+
+/* Стилізація портфоліо */
+.portfolio {
+  text-decoration: none;
+  color:var(--main-color-text);
+}
+/* Стилізація портфоліо-ефект фокус і ховер */
+.portfolio:hover,
+.portfolio:focus {
+  color: var(--accent-color);
+}
+
+/* Стилізація  фону "героя" */
+.hero{
+  background-color: var(--backgroud-color-hero);
+}
+/* стилізація тексту героя */
+.hero-title {
+     font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--white-color-text);
+    background-color: var(--backgroud-color-hero);
+}
+/* Стилізація кникпи в герої */
+ .hero-button {
+font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  color:var(--white-color-text);
+  background-color: var(--accent-color);
+ }
+/* стилізація секці 3, особлмвості */
+.features-title {
+  font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14px;
+    letter-spacing: 0.03em;
+    color: var(--main-color-text);
+    }
+/* стилізація тексут, особливості */
+.features-text {
+     font-size: 14px;
+    line-height: 1.71;
+      letter-spacing: 0.03em;
+      color: var(--second-color-text);
+}
+
+/* стилізація секції "робота" */
+.work-title {
+  font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-color-text);
+}
+/* стилізація секції наша команда */
+.team-title {
+  font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+      color: var(--main-color-text);
+      }
+/* стилізації імені, секція team */
+.team-title-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+    color: var(--main-color-text);
+}
+/*  стилізація посади  */
+.team-text {
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+      color: var(--second-color-text)
+}
+
+/* СТИЛІЗAЦІЯ ПОРТФОЛІО */
+
 /* Колір основного тексту : rgba(33, 33, 33, 1); */
 /*  Вторинний колір : #757575; */
 /* Первинний колір лого: #000000 */
@@ -10,6 +105,7 @@
 /* відстань між словами (буквами letter-spacing): 0.03em; */
 /* Колір тексту імейлу і тел в футері: rgba(255, 255, 255, 0.6); */
 /* Фон футера: #2F303A; */
+/* Фон для героя :background: #2F303A; */
 
 
 
@@ -23,6 +119,7 @@
   --font-family: Roboto, sans-serif;
   --footer-main-color-text: rgba(255, 255, 255, 0.6);
   --footer-background-color: #2F303A;
+  --backgroud-color-hero: #2F303A;
 }
 
 
@@ -180,8 +277,7 @@ color: var(--accent-color);
 
 /* стилізація футера */
 .footer {
-  
-  font-size: 14px;
+    font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   background-color: var(--footer-background-color);
