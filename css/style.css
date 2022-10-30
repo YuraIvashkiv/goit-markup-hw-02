@@ -29,7 +29,7 @@
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: var(--white-color-text);
+    color: var(--first-background);
     background-color: var(--backgroud-color-hero);
 }
 /* Стилізація кникпи в герої */
@@ -38,7 +38,7 @@ font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  color:var(--white-color-text);
+  color:var(--first-background);
   background-color: var(--accent-color);
  }
 /* стилізація секці 3, особлмвості */
@@ -65,7 +65,12 @@ font-weight: 700;
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-color-text);
+    }
+    /* Колір фону для секції "наша команда */
+.team {
+  background-color: var(--background-color-team);
 }
+
 /* стилізація секції наша команда */
 .team-title {
   font-weight: 700;
@@ -75,6 +80,11 @@ font-weight: 700;
     letter-spacing: 0.03em;
       color: var(--main-color-text);
       }
+/* Добвалення кольору фону для li */
+.team-item{
+  background-color:var(--first-background);
+}
+
 /* стилізації імені, секція team */
 .team-title-name {
     font-weight: 500;
@@ -101,7 +111,7 @@ font-weight: 700;
 /* Білий колір (футер) первинний: #FFFFFF  */
 /* Білий колір (футер) вторинний: rgba(255, 255, 255, 0.6) */
 /*Вторинний колір фону:  #2F303A */
-/* Первинний колір фону: #F5F5F5 */
+/* Первинний колір фону:                  */
 /* відстань між словами (буквами letter-spacing): 0.03em; */
 /* Колір тексту імейлу і тел в футері: rgba(255, 255, 255, 0.6); */
 /* Фон футера: #2F303A; */
@@ -110,27 +120,26 @@ font-weight: 700;
 
 
 :root {
-  --first-background: #F5F5F5;
+  --first-background: #FFFFFF; 
   --accent-color: #2196F3;
   --first-logo-color: rgba(0, 0, 0, 1);
   --main-color-text: #212121;
   --second-color-text: #757575;
-  --white-color-text: #FFFFFF;
+  /* --white-color-text: #FFFFFF; */
   --font-family: Roboto, sans-serif;
   --footer-main-color-text: rgba(255, 255, 255, 0.6);
   --footer-background-color: #2F303A;
   --backgroud-color-hero: #2F303A;
+  --backgound-color-team: #F5F4FA;
 }
 
 
 
 body {
   font-family: Roboto, sans-serif;
-  font-style: normal;
-  color: var(--main-color-text);
+   color: var(--main-color-text);
   background-color: var(--first-background);
-  font-weight: 400;
-}
+ }
 
 
 
@@ -198,13 +207,17 @@ body {
 color: var(--accent-color);
 }
 
-
-
 /* Стилізація імейлу */
-.current-mail {
+.mail {
   text-decoration: none;
-  color: var(--accent-color);
+  color: var(--second-color-text);
+  }
+/* налаштування фокусу і ховеру для мейл */
+.mail:hover,
+.mail:focus {
+  color:var(--accent-color);
 }
+
 /* Сірий колір для телефону */
 .tel {
   text-decoration: none;
@@ -225,35 +238,32 @@ color: var(--accent-color);
     margin: -1px;
     border: 0;
     padding: 0;
-  
     white-space: nowrap;
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-
 /* Стилізація усіх кнопок */
-.button {
+.button-item {
   color: var(--main-color-text);
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
-  text-align: center;
   letter-spacing: 0.03em;
   cursor: pointer;
-}
+       }
 
 /* Кнопка "усі" при ховері, фокусі */
 .button-all {
   background-color: var(--accent-color);
-  color: var(--white-color-text);
+  color: var(--first-background);
 }
 
 /* Стилізація кнопки (для всіх кнопок) ефект ховеру і фокусу */
-.button:hover,
-.button:focus{
-  color: var(--white-color-text);
+.button-item:hover,
+.button-item:focus {
+  color: var(--first-background);
   background-color: var(--accent-color);
 }
 
@@ -284,7 +294,7 @@ color: var(--accent-color);
 }
 
 .footer-text {
-  color: var(--white-color-text);
+  color: var(--first-background);
 }
 /* ефект ховера і фокусу для імейлу */
 .footer-mail:hover,
