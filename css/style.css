@@ -1,12 +1,74 @@
-/* СТИЛІЗАЦІЯ СТУДІЇ- HTML */
+/* Колір основного тексту : rgba(33, 33, 33, 1); */
+/*  Вторинний колір : #757575; */
+/* Первинний колір лого: #000000 */
+/* Вторинний колір лого:
+/* Акцент: #2196F3 */
+/* Білий колір (футер) первинний: #FFFFFF  */
+/* Білий колір (футер) вторинний: rgba(255, 255, 255, 0.6) */
+/*Вторинний колір фону:  #2F303A */
+/* Первинний колір фону:                  */
+/* відстань між словами (буквами letter-spacing): 0.03em; */
+/* Колір тексту імейлу і тел в футері: rgba(255, 255, 255, 0.6); */
+/* Фон футера: #2F303A; */
+/* Фон для героя :background: #2F303A; */
+/* Фон при фокусі і ховері в герої: #188CE8 */
 
+:root {
+  --first-background: #FFFFFF; 
+  --accent-color: #2196F3;
+  --first-logo-color: rgba(0, 0, 0, 1);
+  --main-color-text: #212121;
+  --second-color-text: #757575;
+  /* --white-color-text: #FFFFFF; */
+  --font-family: Roboto, sans-serif;
+  --footer-main-color-text: rgba(255, 255, 255, 0.6);
+  --footer-background-color: #2F303A;
+  --backgroud-color-hero: #2F303A;
+  --backgound-color-team: #F5F4FA;
+  --background-color-button-hero:#188CE8;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+   color: var(--main-color-text);
+  background-color: var(--first-background);
+ }
+/* Зняття маркерів */
+.list {
+  list-style: none;
+}
+/* зняття підкреслення */
+.underline {
+  text-decoration: none;
+}
+/* СТИЛІЗАЦІЯ СТУДІЇ- HTML */
+/* Синій колір для логотипу */
+.span {
+  color: var(--accent-color);
+}
+/* Стилізація чорного кольору для логотипу */
+.logo-link {
+  text-decoration: none;
+  color: var(--first-logo-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
 /* Стилізація студії-як поточної сторінки */
 .current-studio {
   text-decoration: none;
   color: var(--accent-color);
 }
-
-/* Стилізація портфоліо */
+/* Стилізація:студіі, портфоліо, контактів */
+.nav {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+/* Стилізація портфоліо для html */
 .portfolio {
   text-decoration: none;
   color:var(--main-color-text);
@@ -16,9 +78,38 @@
 .portfolio:focus {
   color: var(--accent-color);
 }
-
+/* Стилізація контактів */
+.contacts {
+  text-decoration: none;
+  color: var(--main-color-text);
+}
+/*  Стилізація контаків-ефект ховеру, фокусу */
+.contacts:hover,
+.contacts:focus {
+color: var(--accent-color);
+}
+/* Стилізація імейлу */
+.mail {
+  text-decoration: none;
+  color: var(--second-color-text);
+  }
+/* налаштування фокусу і ховеру для мейл */
+.mail:hover,
+.mail:focus {
+  color:var(--accent-color);
+}
+/* Сірий колір для телефону */
+.tel {
+  text-decoration: none;
+  color: var(--second-color-text);
+}
+/* Стилізація телефону-ефект ховеру і фокусу */
+.tel:hover,
+.tel:focus {
+  color: var(--accent-color);
+}
 /* Стилізація  фону "героя" */
-.hero{
+.hero {
   background-color: var(--backgroud-color-hero);
 }
 /* стилізація тексту героя */
@@ -32,7 +123,7 @@
     color: var(--first-background);
     background-color: var(--backgroud-color-hero);
 }
-/* Стилізація кникпи в герої */
+/* Стилізація кнопки в герої */
  .hero-button {
 font-weight: 700;
   font-size: 16px;
@@ -40,8 +131,15 @@ font-weight: 700;
   letter-spacing: 0.06em;
   color:var(--first-background);
   background-color: var(--accent-color);
- }
-/* стилізація секці 3, особлмвості */
+cursor: pointer;
+}
+/* ефект фокусу і ховера для кнопки в герої */
+.hero-button:hover,
+.hero-button:focus{
+  color: var(--first-background);
+  background-color: var(--background-color-button-hero);
+}
+/* стилізація секці 3, особливості */
 .features-title {
   font-weight: 700;
     font-size: 14px;
@@ -49,14 +147,13 @@ font-weight: 700;
     letter-spacing: 0.03em;
     color: var(--main-color-text);
     }
-/* стилізація тексут, особливості */
+/* стилізація тексту, особливості */
 .features-text {
      font-size: 14px;
     line-height: 1.71;
       letter-spacing: 0.03em;
       color: var(--second-color-text);
 }
-
 /* стилізація секції "робота" */
 .work-title {
   font-weight: 700;
@@ -66,10 +163,6 @@ font-weight: 700;
     letter-spacing: 0.03em;
     color: var(--main-color-text);
     }
-    /* Колір фону для секції "наша команда */
-.team {
-  background-color: var(--background-color-team);
-}
 
 /* стилізація секції наша команда */
 .team-title {
@@ -80,11 +173,10 @@ font-weight: 700;
     letter-spacing: 0.03em;
       color: var(--main-color-text);
       }
-/* Добвалення кольору фону для li */
+/* Добавлення кольору фону для li */
 .team-item{
   background-color:var(--first-background);
 }
-
 /* стилізації імені, секція team */
 .team-title-name {
     font-weight: 500;
@@ -100,136 +192,61 @@ font-weight: 700;
     letter-spacing: 0.03em;
       color: var(--second-color-text)
 }
+    /* Колір фону для секції "наша команда */
+    .team {
+      background-color: var(--background-color-team);
+    }
+    /* стилізація "веб" чорним кольором */
+    .span-footer {
+      color: var(--first-background);
+    }
+/* стилізація футера */
+.footer {
+  font-size: 14px;
+line-height: 1.71;
+letter-spacing: 0.03em;
+background-color: var(--footer-background-color);
+}
+.footer-text {
+color: var(--first-background);
+}
+/* ефект ховера і фокусу для імейлу */
+.footer-mail:hover,
+.footer-mail:focus {
+color: var(--accent-color); ;
+}
+.footer-mail {
+color: var(--footer-main-color-text);
+}
+/* ефект фокусу і ховера для телефону */
+.footer-tel:hover,
+.footer-tel:focus {
+color: var(--accent-color);
+}
+.footer-tel {
+color: var(--footer-main-color-text);
+}
+/* фон для футера */
+.general{
+  background-color: var( --footer-background-color);
+}
 
 /* СТИЛІЗAЦІЯ ПОРТФОЛІО */
-
-/* Колір основного тексту : rgba(33, 33, 33, 1); */
-/*  Вторинний колір : #757575; */
-/* Первинний колір лого: #000000 */
-/* Вторинний колір лого:
-/* Акцент: #2196F3 */
-/* Білий колір (футер) первинний: #FFFFFF  */
-/* Білий колір (футер) вторинний: rgba(255, 255, 255, 0.6) */
-/*Вторинний колір фону:  #2F303A */
-/* Первинний колір фону:                  */
-/* відстань між словами (буквами letter-spacing): 0.03em; */
-/* Колір тексту імейлу і тел в футері: rgba(255, 255, 255, 0.6); */
-/* Фон футера: #2F303A; */
-/* Фон для героя :background: #2F303A; */
-
-
-
-:root {
-  --first-background: #FFFFFF; 
-  --accent-color: #2196F3;
-  --first-logo-color: rgba(0, 0, 0, 1);
-  --main-color-text: #212121;
-  --second-color-text: #757575;
-  /* --white-color-text: #FFFFFF; */
-  --font-family: Roboto, sans-serif;
-  --footer-main-color-text: rgba(255, 255, 255, 0.6);
-  --footer-background-color: #2F303A;
-  --backgroud-color-hero: #2F303A;
-  --backgound-color-team: #F5F4FA;
-}
-
-
-
-body {
-  font-family: Roboto, sans-serif;
-   color: var(--main-color-text);
-  background-color: var(--first-background);
- }
-
-
-
-/* Синій колір для логотипу */
-.span {
-  color: var(--accent-color);
-}
-
-/* Стилізація чорного кольору для логотипу */
-.logo-link {
-  text-decoration: none;
-  color: var(--first-logo-color);
-  font-family: Raleway, sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-}
-
-/* Зняття маркерів */
-.list {
-  list-style: none;
-}
-
-/* зняття підкреслення */
-.underline {
-  text-decoration: none;
-}
-
-/* Стилізація:студіі, портфоліо, контактів */
-.nav {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-
 /*  Стилізація студіо*/
 .studio {
   text-decoration: none;
   color: var(--main-color-text);
-
-  /*  Стилізація "студії-ефект ховеру і фокусу" */
+/*  Стилізація "студії-ефект ховеру і фокусу" */
 }
 .studio:hover,
 .studio:focus {
   color:var(--accent-color) ;
 }
-
 /* Стилізація портфоліо */
 .current-portfolio {
   text-decoration: none;
   color: #2196F3;
 }
-
-/* Стилізація контактів */
-.contacts {
-  text-decoration: none;
-  color: var(--main-color-text);
-}
-
-/*  Стилізація контаків-ефект ховеру, фокусу */
-.contacts:hover,
-.contacts:focus {
-color: var(--accent-color);
-}
-
-/* Стилізація імейлу */
-.mail {
-  text-decoration: none;
-  color: var(--second-color-text);
-  }
-/* налаштування фокусу і ховеру для мейл */
-.mail:hover,
-.mail:focus {
-  color:var(--accent-color);
-}
-
-/* Сірий колір для телефону */
-.tel {
-  text-decoration: none;
-  color: var(--second-color-text);
-}
-/* Стилізація телефону-ефект ховеру і фокусу */
-.tel:hover,
-.tel:focus{
-  color: var(--accent-color);
-}
-
-
 /* Прихований заголовок */
 .visually-hidden {
   position: absolute;
@@ -252,21 +269,18 @@ color: var(--accent-color);
   line-height: 1.62;
   letter-spacing: 0.03em;
   cursor: pointer;
-       }
-
+  }
 /* Кнопка "усі" при ховері, фокусі */
 .button-all {
   background-color: var(--accent-color);
   color: var(--first-background);
 }
-
 /* Стилізація кнопки (для всіх кнопок) ефект ховеру і фокусу */
 .button-item:hover,
 .button-item:focus {
   color: var(--first-background);
   background-color: var(--accent-color);
 }
-
 /* Стилізація заголовка */
 .header-img {
   color: var(--main-color-text);
@@ -275,41 +289,11 @@ color: var(--accent-color);
   line-height: 2;
   letter-spacing: 0.06em;
 }
-
 /* Стилізація опису */
 .text-img {
   color: var(--second-color-text);
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-
 }
 
-/* стилізація футера */
-.footer {
-    font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  background-color: var(--footer-background-color);
-}
-
-.footer-text {
-  color: var(--first-background);
-}
-/* ефект ховера і фокусу для імейлу */
-.footer-mail:hover,
-.footer-mail:focus {
-  color: var(--accent-color); ;
-}
-
-.footer-mail {
-  color: var(--footer-main-color-text);
-}
-/* ефект фокусу і ховера для телефону */
-.footer-tel:hover,
-.footer-tel:focus {
-  color: var(--accent-color);
-}
-.footer-tel {
-  color: var(--footer-main-color-text);
-}
